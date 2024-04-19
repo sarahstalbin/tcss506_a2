@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y python3 python3-pip curl nano procps
 RUN pip3 install --upgrade pip && pip3 install flask
 
 # Set the working directory inside the container
-WORKDIR /hello_world_flask
+WORKDIR /flask-docker-app
 
 # Copy your application file (app.py) into the Docker image
 COPY app.py .
